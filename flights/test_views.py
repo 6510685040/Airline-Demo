@@ -56,7 +56,6 @@ class FlightViewTestCase(TestCase):
         passenger = Passenger.objects.create(
             first="hemione", last="granger")
         f = Flight.objects.first()
-        f.capacity = 1
         f.save()
 
         c = Client()
